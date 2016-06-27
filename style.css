@@ -58,8 +58,8 @@ h1{
 
 .post-case{
     background-color: #EEEEEE;
-    width: 350px;
-    height: 600px !important;
+    width: 300px;
+    height: 300px !important;
     margin: 12px;
     position: relative;
     overflow: hidden;
@@ -68,3 +68,65 @@ h1{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*  Demo 2 */
+.wpf-demo-2 {
+    background-color: #FFF;
+    display: block;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.wpf-demo-2 img {
+    height: 100%;
+    width: 100%;
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.wpf-demo-2:hover img {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.wpf-demo-2:hover .view-caption {
+
+    -moz-transform: translateY(-150%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #2aabd2;
+}
+
+.wpf-demo-2 .view-caption {
+    -moz-transform: translateY(10%);
+    -o-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    background-color: #FFF;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 10px;
+    height: 50%;
+}
