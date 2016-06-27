@@ -19,6 +19,7 @@ function bootstrap_js(){
 add_action('wp_enqueue_scripts', 'bootstrap_js');
 
 
+
 function bootstrap_theme(){
     wp_enqueue_script('bootstrap_js', get_template_directory_uri() . "/js/bootstrap.theme.min.js" , array('jquery'), '', true);
 }

@@ -40,8 +40,8 @@ h1{
     position: relative;
     object-fit: cover; /* Do not scale the image */
     object-position: center; /* Center the image within the element */
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
 }
 
 #nav{
@@ -58,7 +58,7 @@ h1{
 
 .post-case{
     background-color: #EEEEEE;
-    width: 350px;
+    width: 300px;
     height: 600px !important;
     margin: 12px;
     position: relative;
@@ -68,3 +68,50 @@ h1{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#header-image{
+    background-color: #c7ddef;
+
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}

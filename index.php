@@ -1,5 +1,5 @@
 <?php get_header() ?>
- <div class="jumbotron">
+ <div class="jumbotron" id="header-image">
      <h1 class="text-center"><?php bloginfo('name') ?></h1>
  </div>
 
