@@ -13,16 +13,20 @@
 		<?php
 	}?>
 
-	<div class="post-context">
-        <div class="title-link">
-            <a id="shit" href="<?php the_permalink() ?>" ><h2><?php the_title(); ?></h2></a>
-        </div>
-        <div class="post-meta">
 
+
+
+
+
+	<div class="post-context">
+        <div class="text-center">
+            <a id="title-link" href="<?php the_permalink() ?>" ><h3><?php the_title(); ?></h3></a>
             <label for=""><?php the_time('F j, Y') ?> | by <?php the_author(); ?> </label>
             <h5 class="post-comment">
                 <label for="">Comments : <?php $commentscount = get_comments_number(); echo $commentscount; ?></label>
             </h5>
+        </div>
+        <div class="post-meta">
             <p>
                 <?php
                 $content = get_the_content();

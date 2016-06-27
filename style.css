@@ -33,8 +33,11 @@ h1{
     color: #1b6d85;
 }
 
+
+
+
 .feature-image{
-    overflow:hidden;
+    position: relative;
     object-fit: cover; /* Do not scale the image */
     object-position: center; /* Center the image within the element */
     height: 350px;
@@ -48,18 +51,20 @@ h1{
 #wrapper-front{
     margin: auto;
 }
+
 .post-context{
     padding: 7px;
 }
-.post-case{
 
+.post-case{
+    background-color: #EEEEEE;
     width: 350px;
     height: 600px !important;
     margin: 12px;
     position: relative;
-    background-color: rgba(215, 215, 215, 0.85);
+    overflow: hidden;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
