@@ -1,0 +1,65 @@
+/*
+Theme Name: Clear
+Theme URI: none
+Author: Hoang Viet
+Author URI: https://www.facebook.com/vfxdirector
+Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+Version: 1
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: Clear
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.navbar-fixed-top { top: 0px; }
+body.admin-bar .navbar-fixed-top { top: 30px !important; }
+@media screen and ( max-width: 782px ) {
+    html { margin-top: 0px !important; }
+    * body { padding-top: 0px !important; }
+    body.admin-bar .navbar-fixed-top { top: 45px !important; }
+}
+@media screen and ( max-width: 600px ) {
+    html { margin-top: 0px ; }
+    * body { padding-top: 0px ; }
+    body.admin-bar .navbar-fixed-top {
+        position: relative;
+        margin-top: -45px !important;
+    }
+
+}
+
+h1{
+    color: #1b6d85;
+}
+
+.feature-image{
+    overflow:hidden;
+    object-fit: cover; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    height: 350px;
+    width: 350px;
+}
+
+#nav{
+    padding-top: 10px;
+}
+
+#wrapper-front{
+    margin: auto;
+}
+.post-context{
+    padding: 7px;
+}
+.post-case{
+
+    width: 350px;
+    height: 600px !important;
+    margin: 12px;
+    position: relative;
+    background-color: rgba(215, 215, 215, 0.85);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
