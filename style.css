@@ -33,17 +33,6 @@ h1{
     color: #1b6d85;
 }
 
-
-
-
-.feature-image{
-    position: relative;
-    object-fit: cover; /* Do not scale the image */
-    object-position: center; /* Center the image within the element */
-    height: 300px;
-    width: 300px;
-}
-
 #nav{
     padding-top: 10px;
 }
@@ -52,19 +41,48 @@ h1{
     margin: auto;
 }
 
-.post-context{
-    padding: 7px;
-}
+
 
 .post-case{
-    background-color: #EEEEEE;
-    width: 300px;
-    height: 600px !important;
-    margin: 12px;
-    position: relative;
+    border-radius: 10px;
     overflow: hidden;
+    background-color: #EEEEEE;
+    width: 250px;
+    height: 250px;
+    margin: 12px;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
+}
+.square-image{
+    position: absolute;
+}
+.feature-image{
+    object-fit: cover; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    height: 250px;
+    width: 250px;
+}
+.post-text{
+    padding: 10px;
+}
+.post-context{
+    position: absolute;
+    background-color: #EEEEEE;
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+
+}
+.post-context:hover{
+    position: absolute;
+    background-color: #EEEEEE;
+    height: 250px;
+    width: 250px;
+    opacity: 1;
+}
